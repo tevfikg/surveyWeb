@@ -1,0 +1,74 @@
+.nav-bg{
+    background-color: #2c3d50 !important;
+}
+.main-container{
+    background-color: #56a6d5 !important;
+}
+#ustAciklama {
+    align-content: flex-end;
+    color: rgb(0, 0, 0);
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.page-section-heading{
+    font-size: 3rem;
+    color: #2c3d50;
+    font-weight: 600;
+}
+.about-container{
+    background-color: #56a6d5 !important;
+}
+.footer-container{
+    background-color: #2c3d50 !important;
+}
+#sbootstrap {
+    color: #56a6d5!important;
+}
+#sbootstrap:hover {
+    color: #56a6d5!important;
+}
+.copyright {
+    background-color: #1a252e !important;
+}
+h4 {
+    margin: 1rem;
+}
+textarea {
+    box-shadow: #1a252e;
+    border: 2px solid #150303; 
+    padding: 2rem; 
+    outline: none; 
+}
+@media (max-width: 576px) {
+    .input-group-text {
+      white-space: normal; /* Ensures wrapping on small screens */
+    }
+  }
+  .input-group-text {
+    white-space: normal !important;
+    word-break: break-word; /* Break long words */
+    overflow-wrap: break-word;
+  }
+  .copyright {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+.btn-outline-secondary {
+    margin-top: 1rem;
+    color: black !important;  /* First color - Purple */
+    border-color: black !important; /* First color for border */
+    background-color: dark orangered !important; /* Ensure it's transparent */
+}
+
+.btn-outline-secondary:hover {
+    background-color: #34a91c !important; /* Second color - Red */
+    color: white !important; /* Text turns white */
+    border-color: #0ba524 !important; /* Match border color */
+}
+.btn-outline-secondary:active {
+    background-color: #d60000 !important; /* Third color - a deeper red */
+    color: white !important;
+    transform: scale(0.95); /* Slightly shrink effect */
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Favicon & From Demo&OnlyJS Website -->
+    <title>Anket</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg nav-bg py4">
+    <div class="container">
+                <a class="navbar-brand text-white fw-semibold fs-3" href="#anonimlik">ARAŞTIRMA ANKET</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold" href="https://www.vision.edu.mk/anasayfa"
+                                target="_blank" rel="noopener noreferrer"> <!-- Gizlilik,güvenlik ve performans icin "noopener noreferrer" -->
+                                Vizyon Üniversitesi
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Anket Bolumu -->
+    <div class="main-container pb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-6 col-12 ">
+                <p id="ustAciklama">Bu anket, iletişim becerileri ve beden dili kullanımının psikolojik iyi oluş üzerine
+                    etkisi hakkında
+                    bilgi toplamayı amaçlamaktadır. Katılımınız tamamen gönüllülük esasına dayanmaktadır ve isminizin
+                    geçmediği bu ankette verdiğiniz cevaplar gizli kalacaktır. <br>Lütfen size en uygun seçeneği
+                    işaretleyiniz. İlginiz için çok teşekkür ederim... </p>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-lg-end">
+            <div class="col-lg-8 col-md-6 col-12 ">
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Demografik Bilgiler
+                </h4>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-6 col-12">
+            <form id="surveyForm" action="https://script.google.com/macros/s/AKfycbwMlydZBqOWOdpzq02p7qSD6sbTrSbT_GZ47e43II0gj_m-1xJ_5scofiLZqfnSk2Y/exec" method="post">
+                <div class="input-group mb-3">
+                    <select class="form-select" id="yaselect" name="Yas">
+                        <option selected>Yaşınız</option>
+                        <option value="18-25">18-25</option>
+                        <option value="26-35">26-35</option>
+                        <option value="36-45">36-45</option>
+                        <option value="45Veüzeri">45 ve üzeri</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select class="form-select" id="cinsiyetSelect" name="Cinsiyet">
+                        <option selected>Cinsiyetiniz</option>
+                        <option value="Kadın">Kadın</option>
+                        <option value="Erkek">Erkek</option>
+                        <option value="Diğer">Diğer</option>
+                        <option value="belirtmekİstemiyorum">Belirtmek İstemiyorum</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select class="form-select" id="egitimSelect" name="Egitim">
+                        <option selected>Eğitim Durumunuz</option>
+                        <option value="liseVeAlti">Lise ve Altı</option>
+                        <option value="Önlisans">ÖnLisans</option>
+                        <option value="lisans">Lisans</option>
+                        <option value="lisansÜstü">Lisansüstü</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select class="form-select" id="meslekSelect" name="Meslek">
+                        <option selected>Mesleğiniz</option>
+                        <option value="Öğrenci">Öğrenci</option>
+                        <option value="Çalışan">Çalışan</option>
+                        <option value="İşsiz">İşsiz</option>
+                        <option value="Emekli">Emekli</option>
+                        <option value="Diğer">Diğer</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select class="form-select" id="gelirDuzeyiSelect" name="GelirDuzeyi">
+                        <option selected>Gelir Düzeyiniz</option>
+                        <option value="Düşük">Düşük</option>
+                        <option value="Orta">Orta</option>
+                        <option value="Yüksek">Yüksek</option>
+                        <option value="Belirtmekİstemiyorum">Belirtmek İstemiyorum</option>
+                    </select>
+                </div>
+
+                <div class="row justify-content-lg-end">
+                    <div class="col-lg-8 col-md-6 col-12 ">
+                        <h4>&nbsp;İletişim Becerileri</h4>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select class="form-select" id="iletisimHissiyetSelect" name="anket1">
+                        <option selected>İletişim kurarken kendinizi ne kadar rahat hissediyorsunuz?</option>
+                        <option value="HiçRahatDeğilim">Hiç rahat değilim</option>
+                        <option value="BirazRahatım">Biraz rahatım</option>
+                        <option value="OldukçaRahatım">Oldukça rahatım</option>
+                        <option value="ÇokRahatım">Çok rahatım</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select class="form-select" id="iletisimEmpatiSelect" name="anket2">
+                        <option selected>İletişim kurarken karşınızdaki kişinin duygularını anlamakta zorlanır mısınız?</option>
+                        <option value="Herzaman">Herzaman</option>
+                        <option value="Sıklıkla">Sıklıkla</option>
+                        <option value="Bazen">Bazen</option>
+                        <option value="Nadiren">Nadiren</option>
+                        <option value="Hiç">Hiç</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select class="form-select" id="iletisimDinlemeSelect" name="anket3">
+                        <option selected>İletişimde aktif dinleme becerilerinizi nasıl değerlendirirsiniz?</option>
+                        <option value="ÇokZayıf">Çok Zayıf</option>
+                        <option value="Orta">Orta</option>
+                        <option value="İyi">İyi</option>
+                        <option value="Çokİyi">Çok İyi</option>
+                    </select>
+                </div>
+
+                <div class="row justify-content-lg-end">
+                    <div class="col-lg-8 col-md-6 col-12 ">
+                        <h4>Beden Dili Kullanımı</h4>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select class="form-select" id="bedendiliKullanimSelect" name="anket4">
+                        <option selected>İletişim kurarken beden dilinizi ne kadar etkili kullandığınızı düşünüyorsunuz?</option>
+                        <option value="HiçEtkiliDeğil">Hiç Etkili Değil</option>
+                        <option value="BirazEtkili">Biraz Etkili</option>
+                        <option value="OldukçaEtkili">Oldukça Etkili</option>
+                        <option value="ÇokEtkili">Çok Etkili</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select class="form-select" id="bedenDiliEtkiSelect" name="anket5">
+                        <option selected>Beden dilinizin karşınızdaki kişi üzerinde olumlu bir etki yarattığını düşünüyor musunuz?</option>
+                        <option value="Hiç">Hiç</option>
+                        <option value="Biraz">Biraz</option>
+                        <option value="Oldukça">Oldukça</option>
+                        <option value="Çok">Çok</option>
+                    </select>
+                </div>
+
+                <div class="row justify-content-lg-end">
+                    <div class="col-lg-8 col-md-6 col-12 ">
+                        <h4>Psikolojik İyi Oluş</h4>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select class="form-select" id="iletisimGozTemasSelect" name="anket6">
+                        <option selected>İletişimde göz Teması kurmakta zorlanırmısınız?</option>
+                        <option value="Herzaman">Herzaman</option>
+                        <option value="Sıklıkla">Sıklıkla</option>
+                        <option value="Bazen">Bazen</option>
+                        <option value="Nadiren">Nadiren</option>
+                        <option value="Hiç">Hiç</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select class="form-select" id="iletisimGozTemasSelect" name="anket7">
+                        <option selected>Kendinizi genel olarak ne kadar mutlu ve huzurlu hissediyorsunuz? </option>
+                        <option value="Hiç">Hiç</option>
+                        <option value="Biraz">Biraz</option>
+                        <option value="Oldukça">Oldukça</option>
+                        <option value="Çok">Çok</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select class="form-select" id="iletisimPsikolojiSelect" name="anket8">
+                        <option selected>İletişim becerilerinizin psikolojik iyi oluşunuzu etkilediğini düşünüyor musunuz?</option>
+                        <option value="Hiç">Hiç</option>
+                        <option value="Biraz">Biraz</option>
+                        <option value="Oldukça">Oldukça</option>
+                        <option value="Çok">Çok</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select class="form-select" id="bedenDiliPsikolojiSelect" name="anket9">
+                        <option selected>Beden dilinizin psikolojik iyi oluşunuzu etkilediğini düşünüyor musunuz?</option>
+                        <option value="Hiç">Hiç</option>
+                        <option value="Biraz">Biraz</option>
+                        <option value="Oldukca">Oldukça</option>
+                        <option value="Çok">Çok</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select class="form-select" id="iletisimCabaSelect" name="anket10">
+                        <option selected>İletişim ve beden dili kullanımınızı geliştirmek için herhangi bir çaba gösteriyor musunuz?</option>
+                        <option value="evet">Evet</option>
+                        <option value="hayir">Hayır</option>
+                    </select>
+                </div>
+                <br>
+                <h4>İletişim becerileri, beden dili ve psikolojik iyi oluşunuz hakkında eklemek istedikleriniz:</h4>
+                 <!-- Textarea İnput -->
+                 <div class="input-group mb-3">
+                    <textarea id="message" name="anket11" rows="2" cols="44" required></textarea>
+                </div>
+            
+                <div class="input-group">
+                    <button class="btn btn-outline-secondary" type="submit">GÖNDER</button>
+                </div>
+            </form>
+             </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container py-5">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="parent-container" id="anonimlik">
+                        <div class="col-lg-12 text-center">
+                            <h5 class="text-white fs-4">AÇIKLAMA</h5>
+                            <p class="text-white fs-5 pt-3">
+                                Tarafınıza ait İsim,Soyisim de dahil hiçbir özel kişisel veriniz bu anket ile
+                                alınmamıştır. <br>
+                                Anket bilimsel araştırma tezinde kullanım amacıyla tamamen ANONİM olarak yapılmaktadır.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copy Right Section -->
+    <div class="copyright py-4 text-center text-white fixed-bottom">
+        <div class="container">
+            <small>
+                Değerli vaktinizi ayırdığınız için teşekkür ederiz...
+            </small>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
